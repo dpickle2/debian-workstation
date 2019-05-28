@@ -12,7 +12,6 @@
     - https://dl-ssl.google.com/linux/linux_signing_key.pub
     - https://deb.nodesource.com/gpgkey/nodesource.gpg.key
     - https://syncthing.net/release-key.txt
-    - https://pkg.tarsnap.com/tarsnap-deb-packaging-key.asc
     - https://www.virtualbox.org/download/oracle_vbox_2016.asc
     - https://www.virtualbox.org/download/oracle_vbox.asc
 
@@ -31,7 +30,6 @@
     - "deb https://deb.nodesource.com/node_10.x stretch main"
     - "deb-src https://deb.nodesource.com/node_10.x stretch main"
     - "deb https://apt.syncthing.net/ syncthing stable"
-    - "deb http://pkg.tarsnap.com/deb/stretch ./"
     - "deb http://download.virtualbox.org/virtualbox/debian stretch contrib"
 
 - name: pkg_repos | Remove Repositories

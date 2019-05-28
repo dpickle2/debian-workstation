@@ -9,7 +9,7 @@
     - /etc/nginx/sites-enabled/syncthing.conf
     - /etc/ssh/sshd_config
     - /etc/sudoers
-    - /etc/vimrc
+    # - /etc/vimrc
     - /var/www/html/syncthing.html
 
 # setup users and groups
@@ -28,15 +28,15 @@
     groups: docker,wheel
     append: true
   with_items:
-    - gary
+    - david
 
 - name: general | Install authroized_keys
   authorized_key:
     user: "{{item}}"
     state: present
-    key: "{{ lookup('file', '/home/gary/.ssh/id_rsa.pub') }}"
+    key: "{{ lookup('file', '/home/david/.ssh/id_rsa.pub') }}"
   with_items:
-    - gary
+    - david
     - root
 
 # services
@@ -50,4 +50,4 @@
     - docker
     - nginx
     - sshd
-    - syncthing@gary
+    - syncthing@david

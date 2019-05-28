@@ -47,15 +47,12 @@
     - sshfs
     - sudo
     - syncthing
-    - tarsnap
     - tig
     - tmux
     - tree
     - vim-gtk3
     - virtualbox-5.2
     - vlc
-    - zfs-dkms
-    - zfsutils-linux
     - zsh
 
 - name: install_pkgs | Install Backports Packages
